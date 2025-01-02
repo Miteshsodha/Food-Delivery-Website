@@ -1,0 +1,6 @@
+POST http://localhost:4000/api/food/remove
+Content-Type: application/json
+
+{
+    "Id": "67725b41423e2560c9bf1bf8"
+}

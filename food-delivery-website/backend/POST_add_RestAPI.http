@@ -1,0 +1,25 @@
+POST http://localhost:4000/api/food/add
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="name"
+
+test 1
+--boundary
+Content-Disposition: form-data; name="description"
+
+desc test
+--boundary
+Content-Disposition: form-data; name="price"
+
+10
+--boundary
+Content-Disposition: form-data; name="category"
+
+veg
+--boundary
+Content-Disposition: form-data; name="image"; filename="food_5.png"
+Content-Type: image/png
+
+< C:\Users\sodha\OneDrive\Desktop\food-delivery-website\frontend\src\assets\food_5.png
+--boundary--
