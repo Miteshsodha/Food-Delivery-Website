@@ -1,6 +1,11 @@
+// @ts-ignore
+
 import userModel from "../models/userModel.js";
 import jwt from "jsonwebtoken"
-import  bycrypt from "bcrypt"
+const bycrypt = process.env.USE_BCRYPT === 'true'
+  ? await import('bcrypt').then(mod => mod.default)
+  : await import('bcryptjs').then(mod => mod.default);
+
 import validator from "validator"
 
 
